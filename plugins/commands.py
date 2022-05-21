@@ -20,7 +20,7 @@ BATCH = []
 @Client.on_message(filters.command('start') & filters.incoming & filters.private)
 async def start(c, m, cb=False):
     if not cb:
-        send_msg = await m.reply_text("**Processing...**", quote=True)
+        send_msg = await m.reply_text("**🚶‍♂Processing...**", quote=True)
 
     owner = await c.get_users(int(OWNER_ID))
     owner_username = owner.username if owner.username else 'Ns_bot_updates'
@@ -30,16 +30,20 @@ async def start(c, m, cb=False):
 
 💡 ** I am Telegram File Store Bot**
 
-`You can store your Telegram Media for permanent Link!`
+`You can store any Telegram Media for permanent Shareable Link!`
 
 
-**👲 Maintained By:** {owner.mention(style='md')}
+➠Check Help 
+
+<| @Sruja_12 👨‍💻
+
+..
 """
 
     # Buttons
     buttons = [
         [
-            InlineKeyboardButton('My Father 👨‍✈️', url=f"https://t.me/{owner_username}"),
+            InlineKeyboardButton('Details📝', url=f"http://telegra.ph/TG-File-Store-Bot-07-10"),
             InlineKeyboardButton('Help 💡', callback_data="help")
         ],
         [
