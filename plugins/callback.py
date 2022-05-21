@@ -16,24 +16,34 @@ async def help_cb(c, m):
     await m.answer()
 
     # help text
-    help_text = """**You need Help?? 🧐**
+    help_text = """Hello! , 👋
 
-★ Just send me the files i will store file and give you share able link
+❓ Help Menu
+
+★ Just send me the files, I will store file and give you share able link. Your files will totally safe here.
+
+👨‍💻 Commands
+
+• /start : for start the bot.
+• /mode : You Can Enable or Disable Uploader Details in Caption.
+  /mode channel_id : for channels.
+• /batch : You Can Store Multiple files in one link.
+• /me : Your Info.
 
 
-**You can use me in channel too 😉**
+💠 Features ❕
 
-★ Make me admin in your channel with edit permission. Thats enough now continue uploading files in channel i will edit all posts and add share able link url buttons
+1. Support Channels : just make me admin with edit permission, I'll add url & share button In media posts.
 
-**How to enable uploader details in caption**
+2. You can delete your file while saving files in private. 🗑
 
-★ Use /mode command to change and also you can use `/mode channel_id` to control caption for channel msg."""
+📍Check Complete Details Here 👇🏻"""
 
     # creating buttons
     buttons = [
         [
             InlineKeyboardButton('Home 🏕', callback_data='home'),
-            InlineKeyboardButton('About 📕', callback_data='about')
+            InlineKeyboardButton('Details📝', url=f"http://telegra.ph/TG-File-Store-Bot-07-10")
         ],
         [
             InlineKeyboardButton('Close 🔐', callback_data='close')
@@ -60,21 +70,21 @@ async def about_cb(c, m):
     bot = await c.get_me()
 
     # about text
-    about_text = f"""--**My Details:**--
+    about_text = f"""Hi! Ashu, 👋
 
-🤖 𝐌𝐲 𝐍𝐚𝐦𝐞: {bot.mention(style='md')}
+🤖 I'm a Telegram File Store Bot v2 written in python with Pyrogram Framework. 
     
-📝 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞: [Python 3](https://www.python.org/)
+🧑‍💻 This Bot Is Made By [Srujan](https://t.me/Sruja_12) & Thanks to [Anoymous_Ns](https://t.me/Anonymous_Ns) for their code. ❤
 
-🧰 𝐅𝐫𝐚𝐦𝐞𝐰𝐨𝐫𝐤: [Pyrogram](https://github.com/pyrogram/pyrogram)
+📍Note : Please don't send adults files, don't block the bot & don't spam.
 
-👨‍💻 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: {owner.mention(style='md')}
+👥 Contact My Boss : [Here](https://t.me/Sruja_12) for any help etc. 
 
-📢 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: [NS BOT UPDATES](https://t.me/Ns_bot_updates)
+📖 My Details : [Click Here](http://telegra.ph/TG-File-Store-Bot-07-10)
 
-👥 𝐆𝐫𝐨𝐮𝐩: [Ns BOT SUPPORT](https://t.me/Ns_Bot_supporters)
+|> Thank You :)
 
-🌐𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞: [Press Me 🥰](https://github.com/Ns-Bots/TG-File-Store)
+-
 """
 
     # creating buttons
