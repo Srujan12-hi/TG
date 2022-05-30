@@ -1,4 +1,4 @@
 import os
 
 class Config(object):
-            BROADCAST_AS_COPY = FALSE
+            BROADCAST_AS_COPY = False
